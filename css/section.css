@@ -1,0 +1,273 @@
+section{
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 53px;
+
+    background-color:rgb( 245,248,249 );
+}
+section .container .main-header{
+    display: flex;
+    justify-content: space-between;
+}
+.container .main-header .main-header-left h2{
+    height: 30px;
+    margin-bottom: 14px;
+
+    font-family: Raleway-Regular;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #262b2e;
+}
+.container .main-header .main-header-left p{
+    height: 15px;
+
+    font-family: OpenSans;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #262b2e;
+
+    opacity: 0.7;
+}
+.container .main-header .main-header-right{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.main-header .main-header-right ul li{
+    display: inline-block;
+
+    margin-left: 15px;
+    height: 17px;
+}
+.main-header .main-header-right .navslip{
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+
+    height: 2px;
+    background-color: #262b2e;
+    opacity: 0.2;
+    transition: all .3s;
+}
+.main-header .main-header-right ul li a{
+    color: #262b2e;
+}
+.container .main-banner{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 51px
+}
+.main-banner .rotation-chart{
+    width: 540px;
+    height: 268px;
+
+    padding: 10px;
+    background-color: #fff;
+}
+.main-banner .rotation-chart .rotation-chart-content{
+    position: relative;
+    width: 539px;
+    overflow: hidden;
+}
+.main-banner .rotation-chart .rotation-chart-btn{
+    position: absolute;
+    top: calc( 50% - 25px );
+
+    width: 25px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+
+    cursor: pointer;
+    display: none;
+}
+.main-banner .rotation-chart #prev{
+    left: 0;
+}
+.main-banner .rotation-chart #next{
+    right: 0px;
+}
+.main-banner .rotation-chart #img{
+    width: 1000%;
+    height: 267px;
+
+    transform: translateX( 0px );
+    transition: all .3s;
+}
+.main-banner .rotation-chart #img li{
+    float: left;
+    width: 539px;
+    height: 267px;
+    cursor: pointer;
+}
+.rotation-chart .rotation-chart-content #img img{
+    width: 539px;
+    height: 267px;
+}
+.rotation-chart .rotation-chart-content #icon{
+    position: absolute;
+    bottom: 0px;
+    left:50%;
+
+    width: 100px;
+    transform: translateX( -50% );
+}
+.rotation-chart .rotation-chart-content #icon ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rotation-chart-content #icon ul li{
+    width: 8px;
+    height: 8px;
+    margin: 5px;
+
+    background-color: rgb(194,197,199);
+    transition: all .5s;
+    cursor: pointer;
+}
+.rotation-chart-content #icon .on{
+    height: 12px;
+    background-color: #fff;
+}
+.main-banner .commodity{
+    width: 560px;
+    height: 288px;
+    box-sizing: border-box;
+
+    padding: 0px 0px 31px;
+    background-color: #fff;
+}
+.main-banner .commodity .commodity-content header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 109px;
+    border-bottom: 1.5px solid;
+    border-color: rgb(245,248,249);
+}
+.commodity .commodity-content header p{
+    height: 24px;
+
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #262b2e;
+}
+.commodity .commodity-content header div{
+    width: 95px;
+    height: 40px;
+
+    border-radius: 2px;
+    border: 1px solid #262b2e;
+
+    font-family: OpenSans-Semibold;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    text-align: center;
+    line-height: 40px;
+    color: #262b2e;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.commodity .commodity-content section{
+    width: 100%;
+    height: 138px;
+    padding: 0px 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.commodity .commodity-content section table{
+    margin-top: 38px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+}
+.commodity-content section table thead{
+    font-family: OpenSans-Bold;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #262b2e;
+}
+.commodity-content section table .last-child{
+    text-align: right;
+}
+.commodity-content section table button{
+    width: 65px;
+    height: 30px;
+
+    background-color: #5dd054;
+    border-radius: 2px;
+    border: 0;
+
+    font-family: OpenSans-Bold;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+.commodity-content section table button:hover{
+    cursor: pointer;
+}
+.commodity-content section table .table-text{
+    font-family: OpenSans;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #262b2e;
+}
+section .container .main-view{
+    margin-top: 20px;
+}
+.main-view .main-view-curve{
+    margin-bottom: 20px;
+    padding:31px 0px 12px;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 349px;
+
+    text-align: center;
+    background-color: #fff;
+}
+.main-view .main-view-curve .main-view-curve-content{
+    width: 100%;
+    height: 349px;
+    text-align: center;
+}
+section .container footer{
+    display: flex;
+    justify-content: space-between;
+
+    height: 377px;
+    background-color:rgb( 245,248,249 );
+}
+section .container footer .main-view-pancake,
+.main-view-columnar{
+    padding:47px 0px 20px;
+
+    box-sizing: border-box;
+    width: 560px;
+    height: 377px;
+    background-color: #fff;
+}
